@@ -1,0 +1,60 @@
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #85cbfa, #b9e9f7);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input {
+    background: #f4f4f4;
+}
+button {
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #0056b3;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+}
+button.delete {
+    background-color: red;
+}
+button.logout {
+    background-color: #ff3e3e;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,24 @@
+h1 {
+    background-color: hsl(39, 93%, 48%);
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-width: 13px;
+    border-style:dashed;
+    border-color: rgb(7, 6, 3);
+
+    border: 10px solid green;
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+p {
+    background-color: blueviolet;
+    border-style: double;
+    border-color: rgb(222, 77, 20);
+    margin-top: 20px 40px 20px 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}

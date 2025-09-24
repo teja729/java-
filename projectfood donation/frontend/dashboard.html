@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Food Donation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to your Dashboard</h2>
+    <section>
+      <h3>Post a Donation</h3>
+      <form class="form-box">
+        <input type="text" placeholder="Food Title" required>
+        <textarea placeholder="Description"></textarea>
+        <input type="text" placeholder="Location">
+        <input type="number" placeholder="Quantity">
+        <button>Submit Donation</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Available Donations</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Rice & Curry</h4>
+          <p>Location: City Center</p>
+          <p>Quantity: 10 plates</p>
+        </div>
+        <div class="card">
+          <h4>Bread Packets</h4>
+          <p>Location: Near Station</p>
+          <p>Quantity: 30 packets</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

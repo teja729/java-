@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Student's Attendance Login</h2>
+        <form id="login-form">
+            <input type="text" id="student-id" placeholder="Enter Student ID" required>
+            <input type="text" id="student-name" placeholder="Enter Student Name" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div id="attendance-container" class="container hidden">
+        <h2>Welcome, <span id="display-name"></span></h2>
+        <button class="logout" id="logout">Logout</button>
+        <h3>Mark Attendance</h3>
+        <button id="mark-attendance">Mark Present</button>
+        <button id="view-history">View Attendance History</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="attendance-list">
+                <!-- Attendance records will appear here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
