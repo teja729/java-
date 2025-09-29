@@ -1,0 +1,64 @@
+<!doctype html>
+</header>
+
+
+<main>
+<section id="home" class="hero">
+<div class="container hero-grid">
+<div>
+<h2>Share what you don't need — feed someone today.</h2>
+<p>Quickly donate cooked or packed food. We'll match it to local charities & volunteers.</p>
+<button id="donateBtn" class="btn">Donate Now</button>
+</div>
+<div class="hero-image">🍲</div>
+</div>
+</section>
+
+
+<section id="how" class="container how">
+<h3>How it works</h3>
+<div class="cards">
+<div class="card"><h4>1. Fill a quick form</h4><p>Tell us what you can donate and when.</p></div>
+<div class="card"><h4>2. We match</h4><p>Nearby volunteers receive the request.</p></div>
+<div class="card"><h4>3. Pickup</h4><p>Volunteer collects and delivers safely.</p></div>
+</div>
+</section>
+
+
+<section id="donors" class="container donors">
+<h3>Recent donations</h3>
+<div id="donorList" class="donor-list">
+<!-- Filled dynamically from script.js fetching admin data (simple demo) -->
+</div>
+</section>
+
+
+<section id="contact" class="container contact">
+<h3>Contact</h3>
+<p>For partnerships or bulk donations, email: <strong>foodbridge@example.com</strong></p>
+</section>
+</main>
+
+
+<!-- Donate Modal -->
+<div id="donateModal" class="modal">
+<div class="modal-content">
+<button class="close" id="closeModal">×</button>
+<h3>Donate Food</h3>
+<form id="donationForm" enctype="multipart/form-data">
+<label>Full name<input name="donor_name" required></label>
+<label>Phone<input name="phone" required></label>
+<label>Pickup address<input name="address" required></label>
+<label>Number of meals<input type="number" min="1" name="meals" required></label>
+<label>Food description<textarea name="description" required></textarea></label>
+<label>Photo (optional)<input type="file" name="image" accept="image/*"></label>
+<button type="submit" class="btn">Send Donation</button>
+</form>
+<div id="formMsg" aria-live="polite"></div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
